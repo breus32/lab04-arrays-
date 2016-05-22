@@ -9,7 +9,7 @@ int get_random_int_min_max(int min_rand, int max_rand)
 
 int main(){
 
-	int mas[100], mas2[100], mas3[100], i, n = 15;
+	int mas[100], mas2[100], i, n = 15, proizvedenie = 0;
 	int min, max;
 	
 	printf ("\nMin rand: ");
@@ -35,9 +35,10 @@ int main(){
 	printf ("\n\t-----------------\t");
 	
 	for (i = 0; i < n; i++){
-		mas3[i] = mas[i] * mas2[i];
-		printf ("\nmas[%d] = %d", i, mas3[i]);
+		proizvedenie += mas[i] * mas2[i];
 	}
+	
+	printf ("\n\tProizvedenie = %d", proizvedenie);
 	
 	return 0;
 }
