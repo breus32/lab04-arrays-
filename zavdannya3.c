@@ -29,7 +29,7 @@ int main ()
 	}
 	
 	for (i = 0; i < n; i++) {
-		if(((mas[i] % 2) == 0) && (mas[i] > 0)){
+		if(((i % 2) == 0) && (mas[i] > 0)){
 			proizved *= mas[i];
 			kilkist = kilkist + 1;
 		}
