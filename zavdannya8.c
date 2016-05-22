@@ -9,7 +9,7 @@ int get_random_int_min_max(int min_rand, int max_rand)
 
 int main()
 {
-	int mas[100], i, n, max2 = 0;
+	int mas[100], i, n, max2 = 0, kilkist = 0;
 	int min, max;
 	
 	printf ("Array size: ");
@@ -34,7 +34,14 @@ int main()
 		}
 	}
 	
+	for(i = 0; i < n; i++){
+		if(mas[i] == max2){
+			kilkist = kilkist + 1;
+		}
+	}
+	
 	printf ("\n\nMax zna4ennya: %d", max2);
+	printf ("\n\nKilkist max elementiv: %d", kilkist);
 	
 	return 0;
 }
